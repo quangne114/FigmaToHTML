@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --font-heading: "Sen", sans-serif;
+  --primay-color: #ffb900;
+}
 
 html {
   font-size: 62.5%;
@@ -23,8 +27,11 @@ a {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
-  border-radius: 24.5px;
+  border-radius: 999px;
   background-color: #171100;
+}
+.btn:hover {
+  opacity: 0.9;
 }
 .main-content {
   width: 1170px;
@@ -35,11 +42,13 @@ a {
 
 /* ======================== Header ======================== */
 .header {
-  background-color: #fff;
+  background-color: #fffcf4;
 }
-.header .fixed {
+.header.fixed {
   position: sticky;
   top: -28px;
+  z-index: 1;
+  opacity: 0.9;
 }
 
 .header .body {
@@ -85,4 +94,167 @@ a {
 }
 .header .action {
   margin-left: 49px;
+}
+
+/* ======================== Hero ======================== */
+.hero {
+  padding: 56px 0px 65px;
+  background-color: #fffcf4;
+}
+
+.hero .body {
+  display: flex;
+}
+/* ======================== Left Hero ======================== */
+
+.hero .media-block {
+  position: relative;
+  width: 48%;
+}
+
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero .hero-summary {
+  padding: 24px;
+  width: 270px;
+  height: 244px;
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  background: #ffffff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.hero-summary .item {
+  display: flex;
+  align-items: center;
+}
+
+.hero-summary .item + .item {
+  margin-top: 22px;
+}
+
+.hero-summary .icon {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff9e8;
+}
+
+.hero-summary .icon2 {
+  background-color: #fcefff;
+}
+
+.hero-summary .icon3 {
+  background-color: #ebeaff;
+}
+
+.hero-summary .info {
+  margin-left: 16px;
+}
+
+.hero-summary .label {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  color: #5f5b53;
+}
+
+.hero-summary .title {
+  font-style: SemiBold;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  font-weight: 600;
+  color: #171100;
+}
+
+/* ======================== Right Hero ======================== */
+
+.hero .content-block {
+  width: 52%;
+  padding-left: 130px;
+  padding-top: 64px;
+}
+
+.hero .heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 1.17;
+  letter-spacing: -1.16px;
+}
+
+.hero .des {
+  font-size: 1.8rem;
+  line-height: 1.67;
+  color: #5f5b53;
+  margin-top: 22px;
+}
+
+.hero .cta-group {
+  margin-top: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--primay-color);
+}
+
+.hero .watch-video {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  margin-left: 28px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40;
+  height: 40;
+  box-shadow: 0px 8px 16px 0px #00000012;
+  background-color: #fff;
+  border-radius: 40px;
+}
+
+.hero .watch-video span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  margin-left: 14px;
+}
+
+.hero .des-recent {
+  margin-top: 48px;
+}
+.hero .stats {
+  margin-top: 8px;
+}
+
+.hero .stats strong {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.23;
+  margin-right: 15px;
+  color: #171100;
+}
+
+.hero .stats strong:nth-child(2) {
+  margin-left: 28px;
 }
