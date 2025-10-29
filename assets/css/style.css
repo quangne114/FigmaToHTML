@@ -475,3 +475,52 @@ a {
   line-height: 1.54;
   color: rgba(255, 255, 255, 1);
 }
+
+/* ======================== Feature ======================== */
+.features {
+  margin-top: 135px;
+  padding: 65px;
+}
+
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features .images {
+  display: flex;
+  gap: 30px;
+}
+
+.features .images img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  opacity: 1;
+  border-radius: 16px;
+}
+
+.features .images .lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features .desc {
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: rgba(95, 91, 83, 1);
+}
+
+.features .cta-btn {
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  background-color: var(--primay-color);
+}
