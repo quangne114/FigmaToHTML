@@ -412,8 +412,14 @@ a {
   padding: 96px 0;
   background-color: rgba(46, 33, 0, 1);
 }
+
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
 .feedback-item {
   display: flex;
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
